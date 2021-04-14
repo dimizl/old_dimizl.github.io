@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="utf-8">
+    <meta charset="EUC-KR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean');
+        * { font-family: ,"S-Core", sans-serif; }
+        @font-face {
+            font-family: 'S-Core-1';
+            font-weight:100;
+            src: url('./converted-files/S-CoreDream-1Thin.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'S-Core-2';
+            font-weight:200;
+            src: url('./converted-files/S-CoreDream-2ExtraLight.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'S-Core-3';
+            font-weight:300;
+            src: url('./converted-files/S-CoreDream-3Light.woff') format('woff');
+            }
+        @font-face {
+            font-family: 'S-Core-4';
+            font-weight:400;
+            src: url('./converted-files/S-CoreDream-4Regular.woff') format('woff');
+            }
+        @font-face {
+            font-family: 'S-Core-5';
+            font-weight:500;
+            src: url('./converted-files/S-CoreDream-5Medium.woff') format('woff');
+            }  
+        @font-face {
+	        font-family: 'S-Core-6';
+	        font-weight:600;
+	        src: url('./converted-files/S-CoreDream-6Bold.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'S-Core-7';
+            font-weight:700;
+            src: url('./converted-files/S-CoreDream-7ExtraBold.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'S-Core-8';
+            font-weight:800;
+            src: url('./converted-files/S-CoreDream-8Heavy.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'S-Core-9';
+            font-weight:900;
+            src: url('./converted-files/S-CoreDream-9Black.woff') format('woff');
+        }
+
+        .title{
+            font-size: 4.5rem;
+            display: block;
+            text-align: center;
+            font-family: 'S-Core-8';
+            text-decoration: none;
+            color: rgb(255, 0, 150);
+        }
+
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+            color:gray;
+            font-family : 'S-Core-5'
+        }
+
+       .clock{
+            font-size: 3.4rem;
+            display: block;
+            text-align: center;
+            font-family: 'S-Core-6' ;
+            color: white;
+            background-color: rgb(255, 0, 150);
+        }
+
+        .c1{
+            font-size: 2.7em;
+            display: block;
+            text-align: center;
+            font-family: 'S-Core-4';
+            text-decoration: none;
+            color : black;
+        }
+        .table2 {
+            background-color: rgb(250, 231, 191);
+            font-family: 'S-Core-3';
+            font-size: 0.8rem;
+        }
+        .github{
+            font-size: 1.0rem;
+            font-family: 'S-Core-8';
+            text-decoration: none;
+            color: black;
+        }
+
+        h4{
+            font-family : 'S-Core-7';
+            font-size: 2.3rem;
+            text-align: center;
+        }
+
+        h5{
+            font-family : 'S-Core-5';
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        h9{
+            font-size: 1.3rem;
+            font-family: 'S-Core-6';
+            background-color: rgb(255, 255, 255);
+        }
+
+        .notice{
+            background-color: bisque;
+        }
+
+        @media ( max-width: 1080px) {
+            .title{
+                font-size: 3.5rem;
+            }
+        }
+    
+        @media ( max-width: 790px) {
+            .title{
+                font-size: 2.4rem;
+            }
+        }
+
+
+        @media ( max-width: 1080px) {
+            
+            
+            .clock {
+                font-size : 3.1rem;
+            }
+
+        
+            .c1{
+                font-size : 2.9rem;
+            }
+    
+        }
+    
+        @media ( max-width: 790px) {
+            .clock {
+                font-size : 2.5rem;
+            }
+
+    
+            .c1{
+                font-size : 2.3rem;
+            }
+    
+    
+        }
+    
+        @media ( max-width: 700px) {
+            .clock {
+                font-size : 1.5rem;
+            }
+            .c1{
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <body>
+        <br>
+        <a class="title" href="https://poketgg.github.io/main/"><b>Zoom Launcher</b></a><br/>
+        <h2>현재 시간</h2><body onload="showClock()">
+            <div id="divClock" class="clock"></div></br><br/>
+        <div class = "notice">
+        <hr>
+        <h4>| 안내사항 |</h4>
+        <h5>1, 2, 4.</h5><br>
+        <hr>
+        </div>
+
+        <div class = "table">
+        <br>
+        <a class="c1"href="https://poketgg.github.io/11cc"><b>1반(미지원)</b></a><br><br/>
+        <a class="c1"href="https://poketgg.github.io/22cc"><b>2반(미지원)</b></a><br><br/>
+        <a class="c1"href="https://poketgg.github.io/33cc"><b>3반</b></a><br><br/>
+        <a class="c1"href="https://poketgg.github.io/44cc"><b>4반(미지원)</b></a><br><br/>
+        <a class="c1"href="https://poketgg.github.io/55cc"><b>5반</b></a><br><br/>
+        <a class="c1"href="https://poketgg.github.io/66cc"><b>6반</b></a><br><br/>
+        <br><br>
+    </div>
+        <div class="table2">
+            <hr></hr>
+            　
+            <h9>　Copyright. @DIMISEUNG BY. NC.　<br/></h9>
+            <br></br>
+            <h10>　이 사이트의 저작권은 @1615 배세웅 에게 있으며, 저작자 표시를 한 경우에 한하여, 비영리 목적으로 공유 및 재가공이 가능합니다.</h10></br>
+            　원본 : <a class = github href="https://github.com/poketgg/ZAL" target="blank"><b>깃허브</b></a> (README.md 참고바람.)</br>
+            <br>
+            　경기도 안산시 단원구 사세충열로 94 한국디지털미디어고등학교<br>
+            　E-Mail : xodid1442@gmail.com 　|　 KAKAOTALK : xodid1442
+           　
+            <hr></hr>
+    </div>
+    </body>
+
+    <script>
+    function showClock()
+        {
+            var currentDate=new Date();
+            var divClock=document.getElementById("divClock");
+            var apm=currentDate.getHours();
+            if(apm<12)
+            {
+                apm="오전　";
+                var msg =apm +(currentDate.getHours())+"시 "
+            }
+            else
+            {
+                apm="오후　";
+                var msg =apm +(currentDate.getHours()-12)+"시 "
+            }
+
+            msg += currentDate.getMinutes() + "분 ";
+            msg += currentDate.getSeconds() + "초　"+  getTodayLabel()
+            
+            divClock.innerText=msg;
+            
+            setTimeout(showClock,1000);
+        }
+    
+        function getTodayLabel() {
+        
+            var week = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일');
+            
+            var today = new Date().getDay();
+            var todayLabel = week[today];
+            
+            return todayLabel;
+        }
+     
+        today_week=getTodayLabel()
+        if(today_week == '토요일' || today_week == '일요일') today_week = '주말';
+        /*============*/
+        let a = new Date().getHours();
+        let b  = new Date().getMinutes();
+    </script>
+

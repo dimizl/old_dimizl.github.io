@@ -264,7 +264,7 @@
 <body>
     <title>Zoom Launcher</title>
     　
-    <a class="title" href="#" onclick="history.back()"><b>Zoom Launcher [5반]</b></a><br/>
+    <a class="title" href="#" onclick="history.back()"><b>Zoom Launcher [3반] </b></a><br/>
     <h2>현재 시간</h2><body onload="showClock()">
         <div id="divClock" class="clock"></div></br><br/>
         <hr></br>
@@ -335,73 +335,72 @@
     <script>
         let timetable = {
             월요일: {
-                /*
-                '0교시': '아침조회',
-                '1교시': '사회',
-                '2교시': '플밍',
-                '3교시': '플밍',
-                '4교시': '미술',
-                '5교시': '수학',
-                '6교시': '국어',
+                /*'0교시': '아침조회',
+                '1교시': '컴시',
+                '2교시': '국어',
+                '3교시': '체육',
+                '4교시': '음악',
+                '5교시': '플밍',
+                '6교시': '플밍',
                 '7교시': '창체',*/
                 '0교시': '아침조회',
-                '1교시': '사회',
-                '2교시': '과학',
-                '3교시': '체육',
-                '4교시': '진로',
-                '5교시': '미술',
-                '6교시': '컴시',
-                '7교시': '국어',
+                '1교시': '영어',
+                '2교시': '수학',
+                '3교시': '진로',
+                '4교시': '과학',
+                '5교시': '체육',
+                '6교시': '국어',
+                '7교시': '컴시',
                 
             },
             화요일: {
                 /*'0교시': '아침조회',
-                '1교시': '사물',
-                '2교시': '사물',
-                '3교시': '컴시',
-                '4교시': '영어',
-                '5교시': '플밍',
-                '6교시': '플밍',
-                '7교시': '체육',*/
+                '1교시': '과학',
+                '2교시': '국어',
+                '3교시': '수학',
+                '4교시': '진로',
+                '5교시': '사회',
+                '6교시': '사물',
+                '7교시': '사물',*/
                 '0교시': '아침조회',
-                '1교시': '수학',
-                '2교시': '미술',
-                '3교시': '과학',
-                '4교시': '사물',
-                '5교시': '영어',
-                '6교시': '사회',
-                '7교시': '진로',
+                '1교시': '과학',
+                '2교시': '음악',
+                '3교시': '영어',
+                '4교시': '사회',
+                '5교시': '수학',
+                '6교시': '컴시',
+                '7교시': '사물',
             },
             수요일: {
                 '0교시': '아침조회',
-                '1교시': '국어',
-                '2교시': '컴시',
-                '3교시': '영어',
-                '4교시': '수학',
-                '5교시': '과학',
+                '1교시': '음악',
+                '2교시': '사회',
+                '3교시': '플밍',
+                '4교시': '플밍',
+                '5교시': '영어',
                 '6교시': 'CA'
             },
             목요일: {
                 '0교시': '아침조회',
-                '1교시': '사회',
-                '2교시': '과학',
-                '3교시': '체육',
-                '4교시': '진로',
-                '5교시': '미술',
-                '6교시': '컴시',
-                '7교시': '국어',
-            
+                '1교시': '영어',
+                '2교시': '수학',
+                '3교시': '진로',
+                '4교시': '과학',
+                '5교시': '체육',
+                '6교시': '국어',
+                '7교시': '컴시',
+                '　': '방과후',
             },
             금요일: {
                 '0교시': '아침조회',
-                '1교시': '수학',
-                '2교시': '미술',
-                '3교시': '과학',
-                '4교시': '사물',
-                '5교시': '영어',
-                '6교시': '사회',
-                '7교시': '진로',
-        
+                '1교시': '과학',
+                '2교시': '음악',
+                '3교시': '영어',
+                '4교시': '사회',
+                '5교시': '수학',
+                '6교시': '컴시',
+                '7교시': '사물',
+                '　': '방과후',
 
             },
             주말: {
@@ -467,7 +466,7 @@
         let _8class = document.getElementById("_8class");
 
         let zoom_location = {
-            '수학': 'https://zoom.us/j/6838770867',
+            '수학': 'https://us02web.zoom.us/j/6838770867?pwd=NHh1R0Zlamw1eE5CZ1ZmM1Q5WFRxZz09',
             '국어': 'https://zoom.us/j/5377141697',
             '영어': 'https://zoom.us/j/7654919677',
             '컴시': 'https://us04web.zoom.us/j/3650046422?pwd=MzZxUERBdzc1bUVqRS81OURKdndFZz09',
@@ -476,13 +475,13 @@
             '체육': 'https://zoom.us/j/7760965125?pwd=cXFDREJHbmRSTWRvMENzTmZ0eTlLZz09',
             '플밍': 'https://zoom.us/j/6471668401',
             '사물': 'https://zoom.us/j/3053522072?pwd=SThwTWtQbnlLZjVLMWVJVGkzN3NrUT09',
-            '미술': 'https://zoom.us/j/5135798594',
-            '진로': 'https://zoom.us/j/4700404365',
+            '음악': 'https://meet.google.com/wmq-qfxj-dbc?authuser=0',
+            '진로': 'https://meet.google.com/uft-hvqs-aws?authuser=0',
             '창체': 'https://calendar.google.com/calendar/u/1/r?pli=1',
             'CA': 'https://docs.google.com/spreadsheets/d/18V1sR8k6bcavZv-RBwO7GUNHVMOpRcFNyVpn-KIYG9o/edit#gid=0',
             '자가진단':'https://hcs.eduro.go.kr/#/relogin',
             '수업이 없어요 !': 'https://poketgg.github.io/ZAL',
-            '아침조회': 'https://zoom.us/j/5377141697',
+            '아침조회': 'https://meet.google.com/qqb-qqep-myd?authuser=0',
             '방과후': 'https://docs.google.com/spreadsheets/d/1pA-8fOwoVj4uvu4b-0TF701YtRi7VgUM9iFFVu9scfk/edit#gid=0'
         }
         let _0a = document.createElement("a");

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="kor">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="mzllogo.png">
-    <style>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/mzllogo.png">
+    <style>/*
     @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean');
         * { font-family: ,"S-Core", sans-serif; }
         @font-face {
@@ -63,8 +63,31 @@
             text-decoration: none;
             color:black;
             font-size: 1.2rem;
-        }
+        }*/
     </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');  
+        .Login{
+            font-family: 'Do Hyeon', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            margin: auto;
+            display: block;
+            font-size: 2.0rem;
+        }
+        .signup{
+            font-family: 'Do Hyeon', sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color:black;
+            font-size: 1.2rem;
+        }
+        
+
+    </style>
+
+
 </head>
 
 <html>
@@ -75,24 +98,27 @@
         </style>
     </head>
     <body>
-        <img src="./ZL Logo.PNG"
-        style="display: block; margin: 0 auto; width:500px; "
-        /><br><br>
-        <div class="Login" style="text-align: center;">
-            <fieldset style="width:550px; margin:auto">
-                <legend>로그인</legend>
+        <div class="out" style="display: block; margin: auto; text-align: center; width: 550px; margin-top: 100px;">
+            <div id="Loginbox">
+                <img src="./ZL Logo.PNG"style="display: block; margin: auto; width:350px; margin-bottom: 50px;"/>
                 <form method="get" action="./main.html">
-                <input type="text" placeholder="아이디" name="id">
-                <input type="password" placeholder="비밀번호" name="pw"><br><br>
-                <input type="submit" value="로그인"
-                style="font-family:'S-Core-9'; font-size: 20px;";
-                />
-                <input type='reset' value='초기화'
-                        style="font-family:'S-Core-9'; font-size: 20px;";
-                    /><br><br>
-                    <a class="signup">* 기본 <b>아이디는 학번 4자리, 비밀번호는 제제쌤의 본명</b>입니다. *<br</br>문의 사항 : kakao : xodid1442 <br> E-mail : xodid1442@gmail.com | Discord : 배세웅#8650</a>
-            </fieldset>
-            </form>
+                    <input type="text" style="width: 300px; height: 35px; margin-bottom: 10px; font-size: 15px; font-family: 'Gothic A1', sans-serif;" placeholder="학번" name="id"><br>
+                    <input type="password" style="width: 300px; height: 35px; margin-bottom: 1px; font-size: 15px; font-family: 'Gothic A1', sans-serif;" placeholder="비밀번호" name="pw"><br><br>
+                    <input type="submit" value="로그인"
+                    style="font-family: 'Gothic A1', sans-serif; font-weight: 800; font-size: 18px;";
+                    />
+                    <input type='reset' value='초기화'
+                            style="font-family: 'Gothic A1', sans-serif; font-weight: 800; font-size: 18px;";
+                        />
+                    </form>
+            </div>
+            <div class="Login" style="text-align: center; margin-top: 100px;">
+                <fieldset style="width:440px; height: 180px; margin:auto">
+                    <legend>계정 안내</legend>
+                        <a class="signup">* 기본 <id style=" color: blueviolet;">비밀번호는 제제쌤의 본명</id>입니다. *<br><qd style="font-family: 'Gothic A1', sans-serif; font-weight: 700; font-size: 1.0rem">문의 사항 : kakao : xodid1442 <br> E-mail : xodid1442@gmail.com | Discord : 배세웅#8650</a></qd>
+                </fieldset>
+                <p>완전히 새로워진 ZL이 곧 찾아옵니다.</p>
+            </div>
         </div>
         <!--<div class="Login">
         <fieldset style="width:500px; margin:auto">
@@ -130,6 +156,12 @@
 
 </body>
 -->
+
+<script>
+    
+
+
+</script>
 
 <script>
     
